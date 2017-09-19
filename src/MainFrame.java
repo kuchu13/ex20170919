@@ -10,7 +10,7 @@ public class MainFrame extends Frame {
     private Button btnAdd = new Button("Add");
     private Label lab = new Label("0");
     private int n = 0;
-    //ctrl+D=ctrl+c ctrl+v
+//ctrl+D=ctrl+c ctrl+v
 
     public MainFrame(){
         initComp();
@@ -32,6 +32,7 @@ public class MainFrame extends Frame {
                 System.exit(0);
             }
         });
+
         btnAdd.setBackground(new Color(0x51E1A4));
         btnAdd.addActionListener(new ActionListener() {
             @Override
@@ -45,6 +46,7 @@ public class MainFrame extends Frame {
         this.add(btnExit);
         this.add(btnAdd);
         this.add(lab);
+
         this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
